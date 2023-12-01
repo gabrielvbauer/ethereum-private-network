@@ -13,7 +13,6 @@ services:
     command:
       --nodekeyhex="b0ac22adcad37213c7c565810a50f1772291e7b0ce53fb73e7ec2a3c75bc13b5"
       --nodiscover
-      --ipcdisable
       --networkid=${NETWORK_ID}
       --netrestrict="172.16.254.0/28"
     networks:
@@ -31,7 +30,7 @@ services:
       --allow-insecure-unlock
       --http
       --http.addr="0.0.0.0"
-      --http.api="eth,web3,net,admin,personal"
+      --http.api="eth,web3,net,admin,personal,miner"
       --http.corsdomain="*"
       --networkid=${NETWORK_ID}
       --netrestrict="172.16.254.0/28"
